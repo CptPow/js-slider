@@ -25,16 +25,19 @@ main {
 .img-principale > img {
     width: 100%;
     height: 100%;
+    object-fit: fill;
 }
 
 .img-slider {
     width: 20%;
+    height: 100%;
 }
 
 .img-slider > img {
      width: 100%;
     height: 25%; 
-    
+    cursor: pointer;
+    object-fit: fill;
 }
 
 .immagini{
@@ -55,4 +58,27 @@ main {
    top: 52%;
    left: 30%;
 }
+
+.picture > img:hover {
+    border: 4px solid gray;
+}
+
+ .bordo {
+    filter: brightness(60%);
+} 
+
+ .bordo:hover {
+    filter: brightness(100%);
+    border: 3px solid gray;
+}  
+
+ .selected {
+    filter: brightness(100%);
+    border: 3px solid gray;
+}  
+
+
+
+
+
 
