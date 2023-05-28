@@ -49,6 +49,7 @@ oggetto.forEach((element) => {
     if (e.target.matches(".img-slider img")){
         selectedImageIndex = Array.from(images).indexOf(e.target);
         mostraImmagine(selectedImageIndex);
+        mostraImmagineBack(selectedImageIndex);
     }
 })
 
